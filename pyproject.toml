@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "fine-tuning"
+version = "0.1.0"
+description = ""
+authors = ["DaniilShd <ds_const@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+torch = "^2.9.0"
+transformers = "^4.57.1"
+datasets = "^4.3.0"
+torchvision = "^0.24.0"
+evaluate = "^0.4.6"
+matplotlib = "^3.10.7"
+scikit-learn = "^1.7.2"
+accelerate = "^1.11.0"
+tensorboard = "^2.20.0"
+seaborn = "^0.13.2"
+numpy = "<2.3.0"
+opencv-python = "^4.12.0.88"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
