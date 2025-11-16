@@ -41,9 +41,9 @@
 ## Выводы
 
 ### Подтвержденные гипотезы
-✅ ViT использует иерархическую обработку информации
-✅ Attention heads специализируются на разных признаках
-✅ CLS token агрегирует информацию со всего изображения
+- ViT использует иерархическую обработку информации
+- Attention heads специализируются на разных признаках
+- CLS token агрегирует информацию со всего изображения
 
 ### Сильные стороны ViT
 - Интерпретируемость через attention-карты
@@ -57,5 +57,43 @@
 
 ## Визуализации
 1) Визуализация внимания 
-![train](reports/attention_visualizations/layers_comparison.png)
+![layers_comparison](reports/attention_visualizations/layers_comparison.png)
+
+2) Анализ разнообразия голов внимания
+
+Разнообразие attention heads по слоям:
+Layer 0: 0.329
+Layer 1: 0.239
+Layer 2: 0.193
+Layer 3: 0.094
+Layer 4: 0.247
+Layer 5: 0.306
+Layer 6: 0.284
+Layer 7: 0.037
+Layer 8: 0.008
+Layer 9: 0.014
+Layer 10: 0.043
+Layer 11: 0.094
+
+![head_diversity](reports/attention_visualizations/head_diversity.png)
+
+3) Сравнение работы трансформера с разными размерами изображения 
+
+![resolution_impact](reports/attention_visualizations/resolution_impact.png)
+
+## Метрики на тестовых данных 
+
+Image 0 (Ankle boot):
+  Focus Score: 0.170
+  Coverage: 0.286
+
+Image 1 (Pullover):
+  Focus Score: 0.188
+  Coverage: 0.168
+
+Image 2 (Trouser):
+  Focus Score: 0.176
+  Coverage: 0.301
+
+## Выводы
 
