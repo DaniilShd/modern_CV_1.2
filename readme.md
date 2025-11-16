@@ -81,6 +81,10 @@ Layer 11: 0.094
 
 ![resolution_impact](reports/attention_visualizations/resolution_impact.png)
 
+4) Визуализация rollout
+
+![output](reports/attention_visualizations/output.png)
+
 ## Метрики на тестовых данных 
 
 Image 0 (Ankle boot):
